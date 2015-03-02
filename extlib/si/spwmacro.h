@@ -16,7 +16,7 @@
 #ifndef SPWMACRO_H
 #define SPWMACRO_H
 
- 
+
 #define SPW_FALSE   (0)
 #define SPW_TRUE    (!SPW_FALSE)
 

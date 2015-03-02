@@ -8,7 +8,7 @@
  *
  *----------------------------------------------------------------------
  *
- * (C) 1998-2001 3Dconnexion. All rights reserved. 
+ * (C) 1998-2001 3Dconnexion. All rights reserved.
  * Permission to use, copy, modify, and distribute this software for all
  * purposes and without fees is hereby grated provided that this copyright
  * notice appears in all copies.  Permission to modify this software is granted

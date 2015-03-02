@@ -6,7 +6,7 @@
  *
  *----------------------------------------------------------------------
  *
- * (c) 1998-2005 3Dconnexion. All rights reserved. 
+ * (c) 1998-2005 3Dconnexion. All rights reserved.
  * Permission to use, copy, modify, and distribute this software for all
  * purposes and without fees is hereby grated provided that this copyright
  * notice appears in all copies.  Permission to modify this software is granted
@@ -80,7 +80,7 @@ typedef struct { SiSyncPacketHeader h; SPWint32 i; SPWbool state;		} SiSyncSetBu
 
 typedef struct
 {
-	union 
+	union
 	{
 		SiSyncPacketHeader h;
 		SiSyncGetVersionPacket gv;

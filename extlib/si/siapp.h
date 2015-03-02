@@ -8,7 +8,7 @@
  *
  *-----------------------------------------------------------------------------
  *
- * (c) 1998-2005 3Dconnexion. All rights reserved. 
+ * (c) 1998-2005 3Dconnexion. All rights reserved.
  * Permission to use, copy, modify, and distribute this software for all
  * purposes and without fees is hereby grated provided that this copyright
  * notice appears in all copies.  Permission to modify this software is granted
@@ -30,14 +30,14 @@ extern "C" {
 
 /* some enumerated types used in siapp.c */
 
-enum InitResult 
+enum InitResult
    {
-   NOT_LOADED, 
-   FAILED, 
+   NOT_LOADED,
+   FAILED,
    LOADED
    };
 
-enum ErrorCode 
+enum ErrorCode
    {
    NO_DLL_ERROR=0,
    DLL_LOAD_FAILURE,
@@ -55,12 +55,12 @@ SiDevID        SiDeviceIndex (int idx);
 int            SiDispatch (SiHdl hdl, SiGetEventData *pData,
                            SiSpwEvent *pEvent, SiSpwHandlers *pDHandlers);
 void           SiOpenWinInit (SiOpenData *pData, HWND hWnd);
-SiHdl          SiOpen (char *pAppName, SiDevID devID, SiTypeMask *pTMask, int mode, 
+SiHdl          SiOpen (char *pAppName, SiDevID devID, SiTypeMask *pTMask, int mode,
                        SiOpenData *pData);
 enum SpwRetVal SiClose (SiHdl hdl);
 void           SiGetEventWinInit (SiGetEventData *pData,
                                   UINT msg, WPARAM wParam, LPARAM lParam);
-enum SpwRetVal SiGetEvent (SiHdl hdl, int flags, SiGetEventData *pData, 
+enum SpwRetVal SiGetEvent (SiHdl hdl, int flags, SiGetEventData *pData,
                            SiSpwEvent *pEvent);
 enum SpwRetVal SiBeep (SiHdl hdl, char *string);
 enum SpwRetVal SiRezero (SiHdl hdl);

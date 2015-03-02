@@ -7,7 +7,7 @@
  *
  *----------------------------------------------------------------------
  *
- * (C) 1998-2001 3Dconnexion. All rights reserved. 
+ * (C) 1998-2001 3Dconnexion. All rights reserved.
  * Permission to use, copy, modify, and distribute this software for all
  * purposes and without fees is hereby grated provided that this copyright
  * notice appears in all copies.  Permission to modify this software is granted
@@ -32,7 +32,7 @@ static char incFileNameCvsId[]="(C) 1996 Spacetec IMC Corporation: $Id: si.h,v 1
 #include "spwerror.h"
 
 /*
- * UI modes 
+ * UI modes
  */
 #define SI_UI_ALL_CONTROLS    0xffffffffL
 #define SI_UI_NO_CONTROLS     0x00000000L
@@ -48,7 +48,7 @@ static char incFileNameCvsId[]="(C) 1996 Spacetec IMC Corporation: $Id: si.h,v 1
 #define SI_UI_DIALOG_POPUP    0x00000020L
 
 /*
- * Device types and classes 
+ * Device types and classes
  */
 typedef enum
    {
@@ -67,7 +67,7 @@ typedef enum
    SI_SPACEBALL_3003B           =  11,
    SI_SPACEBALL_3003C           =  12,
    SI_SPACEBALL_4000            =  13,
-   SI_SPACEMOUSE_CLASSIC        =  14, 
+   SI_SPACEMOUSE_CLASSIC        =  14,
    SI_SPACEMOUSE_PLUS           =  15,
    SI_SPACEMOUSE_XT             =  16,
    SI_CYBERMAN                  =  17,
@@ -108,7 +108,7 @@ typedef enum
  * This is an INTERNAL flag used by the polling mechanism, user applications
  * should NOT send this flag.
  */
-#define SI_POLLED_REQUEST     0x0100 
+#define SI_POLLED_REQUEST     0x0100
 
 /*
  * SpaceWare event types
@@ -289,7 +289,7 @@ typedef struct                /* Bitmasks of button states */
    } SiButtonData;
 
 /*
- * SI_BUTTON_PRESS_EVENT & SI_BUTTON_RELEASE_EVENT are hardware button 
+ * SI_BUTTON_PRESS_EVENT & SI_BUTTON_RELEASE_EVENT are hardware button
  * events.  Meaning that they are meant to be sent when a specific hardware
  * button is pressed.  The correlation between the actual hardware button
  * and the resulting button number could be broken by careful editing of
@@ -308,7 +308,7 @@ typedef struct				  /* Data for SI_BUTTON_PRESS/RELEASE_EVENT */
 
 typedef struct				  /* Data for SI_APP_EVENT */
 	{
-	SPWuint32 functionNumber; /* The Application-specific function number 
+	SPWuint32 functionNumber; /* The Application-specific function number
 							   * invoked by the user in a SI_APP_EVENT     */
 	} SiAppEventData;
 

@@ -6,7 +6,7 @@
  *
  *----------------------------------------------------------------------
  *
- * (c) 1998-2005 3Dconnexion. All rights reserved. 
+ * (c) 1998-2005 3Dconnexion. All rights reserved.
  * Permission to use, copy, modify, and distribute this software for all
  * purposes and without fees is hereby grated provided that this copyright
  * notice appears in all copies.  Permission to modify this software is granted
@@ -177,7 +177,7 @@ typedef enum
 
 /*
  * Private / implementation structures
- * 
+ *
  * We suggest you leave these hidden and use the accessor functions rather than
  * directly accessing the structures.
  */
@@ -185,7 +185,7 @@ typedef enum
 
 
 /*
- * Accessor Function headers 
+ * Accessor Function headers
  */
 SPWuint32 SiSyncGetSize(SiSyncPacket p);
 void      SiSyncSetSize(SiSyncPacket *p, SPWuint32 size);

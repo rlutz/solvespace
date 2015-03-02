@@ -40,7 +40,7 @@ static char spwdataCvsId[]="(C) 1996-2005 3Dconnexion: $Id: spwdata.h,v 1.4 1996
 #define char_t				char
 #define uint32_t			unsigned long
 #define sint32_t			long
-#define boolean_t			unsigned char  
+#define boolean_t			unsigned char
 #define void_t				void
 #define window_handle_t		HWND
 

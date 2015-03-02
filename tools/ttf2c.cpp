@@ -34,7 +34,7 @@ int main(void)
         SetTextColor(hdc, RGB(255, 255, 255));
         char str[2] = { c, 0 };
         TextOut(hdc, 0, 0, str, 1);
-        
+
         int i, j;
         for(i = 0; i < 16; i++) {
             for(j = 0; j < 16; j++) {
