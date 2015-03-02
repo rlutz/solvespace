@@ -8,7 +8,6 @@ AC_CONFIG_AUX_DIR([ac-aux])
 AC_CONFIG_MACRO_DIR([m4])
 
 AM_INIT_AUTOMAKE([1.9.6 -Wall -Werror foreign subdir-objects tar-ustar])
-AM_MAINTAINER_MODE
 
 AC_PROG_CC
 AC_PROG_CXX
