@@ -52,6 +52,8 @@ char *Constraint::DescriptionString(void) {
     return ret;
 }
 
+#ifndef LIBRARY
+
 //-----------------------------------------------------------------------------
 // Delete all constraints with the specified type, entityA, ptA. We use this
 // when auto-removing constraints that would become redundant.
@@ -111,8 +113,6 @@ void Constraint::ConstrainCoincident(hEntity ptA, hEntity ptB) {
     Constrain(POINTS_COINCIDENT, ptA, ptB,
         Entity::NO_ENTITY, Entity::NO_ENTITY, false, false);
 }
-
-#ifndef LIBRARY
 
 void Constraint::MenuConstrain(int id) {
     Constraint c;
