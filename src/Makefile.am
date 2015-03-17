@@ -88,7 +88,7 @@ solvespace_SOURCES = \
 if HAVE_FLTK
 solvespace_SOURCES += \
 	fltk/fltkmain.cpp \
-	fltk/fltkutil.cpp
+	unix/unixutil.cpp
 
 solvespace_LDADD = $(FLTK_LDFLAGS) -lX11 -lGL -lGLU $(LIBSPNAV_LIBS)
 endif
