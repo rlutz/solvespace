@@ -4,18 +4,12 @@ AM_CPPFLAGS = -I$(top_srcdir)/include
 
 noinst_PROGRAMS  = CDemo
 
-CDemo_SOURCES = CDemo.c
+CDemo_SOURCES = CDemo.c dummy.cpp
 
-CDemo_LDADD =
+CDemo_LDADD = ../src/libslvs.la
 
-if HAVE_FLTK
-CDemo_SOURCES += ../src/posixutil.cpp
-endif
-if WIN32
-CDemo_SOURCES += ../src/win32/w32util.cpp
-endif
-
-CDemo_LDADD += ../src/libslvs.la
+dummy.cpp:
+	$(AM_V_GEN): > $@
 
 EXTRA_DIST = \
 	DOC.txt \

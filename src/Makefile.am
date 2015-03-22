@@ -10,6 +10,12 @@ libslvs_la_SOURCES = \
 	constrainteq.cpp \
 	system.cpp \
 	lib.cpp
+if HAVE_FLTK
+libslvs_la_SOURCES += posixutil.cpp
+endif
+if WIN32
+libslvs_la_SOURCES += win32/w32util.cpp
+endif
 libslvs_la_CPPFLAGS = -DLIBRARY -I$(top_srcdir)/include
 
 AM_CPPFLAGS = $(FLTK_CXXFLAGS) $(LIBSPNAV_CPPFLAGS)
