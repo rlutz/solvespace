@@ -11,7 +11,7 @@ CDemo_SOURCES = CDemo.c
 CDemo_LDADD =
 
 if HAVE_FLTK
-CDemo_SOURCES += ../src/unix/unixutil.cpp
+CDemo_SOURCES += ../src/posixutil.cpp
 CDemo_LDADD += $(FLTK_LDFLAGS) -lX11 -lGL -lGLU $(LIBSPNAV_LIBS)
 endif
 if WIN32
