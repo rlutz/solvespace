@@ -2,8 +2,6 @@
 
 AM_CPPFLAGS = -I$(top_srcdir)/include
 
-AM_LDFLAGS = -L../src
-
 noinst_PROGRAMS  = CDemo
 
 CDemo_SOURCES = CDemo.c
@@ -17,7 +15,7 @@ if WIN32
 CDemo_SOURCES += ../src/win32/w32util.cpp
 endif
 
-CDemo_LDADD += -lslvs
+CDemo_LDADD += ../src/libslvs.la
 
 EXTRA_DIST = \
 	DOC.txt \

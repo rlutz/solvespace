@@ -1,8 +1,8 @@
 ## src/Makefile.am
 
-noinst_LIBRARIES = libslvs.a
+noinst_LTLIBRARIES = libslvs.la
 
-libslvs_a_SOURCES = \
+libslvs_la_SOURCES = \
 	util.cpp \
 	entity.cpp \
 	expr.cpp \
@@ -10,7 +10,7 @@ libslvs_a_SOURCES = \
 	constrainteq.cpp \
 	system.cpp \
 	lib.cpp
-libslvs_a_CPPFLAGS = -DLIBRARY -I$(top_srcdir)/include
+libslvs_la_CPPFLAGS = -DLIBRARY -I$(top_srcdir)/include
 
 AM_CPPFLAGS = $(FLTK_CXXFLAGS) $(LIBSPNAV_CPPFLAGS)
 
