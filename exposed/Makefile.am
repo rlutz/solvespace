@@ -12,7 +12,6 @@ CDemo_LDADD =
 
 if HAVE_FLTK
 CDemo_SOURCES += ../src/posixutil.cpp
-CDemo_LDADD += $(FLTK_LDFLAGS) -lX11 -lGL -lGLU $(LIBSPNAV_LIBS)
 endif
 if WIN32
 CDemo_SOURCES += ../src/win32/w32util.cpp
