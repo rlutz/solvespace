@@ -1,6 +1,6 @@
 ## src/Makefile.am
 
-noinst_LTLIBRARIES = libslvs.la
+lib_LTLIBRARIES = libslvs.la
 
 libslvs_la_SOURCES = \
 	util.cpp \
