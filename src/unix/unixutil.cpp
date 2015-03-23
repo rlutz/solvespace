@@ -30,7 +30,7 @@ void dbp(const char *str, ...)
 
 void GetAbsoluteFilename(char *file)
 {
-    char expanded[MAX_PATH];
+    char expanded[PATH_MAX];
     realpath(file, expanded);
     strcpy(file, expanded);
 }
