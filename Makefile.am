@@ -2,7 +2,7 @@
 
 ACLOCAL_AMFLAGS = -I m4
 
-SUBDIRS = src exposed
+SUBDIRS = src example
 
 noinst_HEADERS = include/slvs.h
 
